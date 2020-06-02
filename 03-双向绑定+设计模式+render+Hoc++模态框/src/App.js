@@ -30,6 +30,9 @@ function App (props) {
       <Menu.Item key="login">
         <Link to='/login'> Login</Link>
       </Menu.Item>
+      <Menu.Item key="edit">
+        <Link to='/edit'> Edit</Link>
+      </Menu.Item>
     </Menu>
     {props.children}
   </>)

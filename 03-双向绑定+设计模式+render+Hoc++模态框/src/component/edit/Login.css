@@ -1,0 +1,27 @@
+#modal-root {
+  position: relative;
+  z-index: 999;
+}
+
+.app {
+  height: 50em;
+  width: 50em;
+  background: lightblue;
+  overflow: hidden;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal .content {
+}
