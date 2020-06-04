@@ -18,10 +18,22 @@ export default class Edit extends Component {
     this.setState({ user })
     this.handleShow()
   }
+  handleProp = (e) => {
+    console.log('冒泡了')
+    e.stopPropagation();
+  }
+  handleProp2 = (e) => {
+    console.log('冒泡了2')
+    e.stopPropagation();
+  }
+  handleProp3 = (e) => {
+    e.stopPropagation();
+  }
+
 
   render () {
     const EditModal = this.state.showModal ? (
-      <ModalEdit>
+      <ModalEdit onClick={this.handleProp3}>
         <EditChild handleHide={this.handleHide} {...this.state.user} />
       </ModalEdit>
     ) : null;
@@ -38,7 +50,11 @@ export default class Edit extends Component {
                 <button onClick={() => this.handleEdit(user)}>编辑</button>
               </div>)
           }
-          {EditModal}
+          <div onClick={this.handleProp2}>
+            <div onClick={this.handleProp}>
+              {EditModal}
+            </div>
+          </div>
         </div>
       </div>
     );

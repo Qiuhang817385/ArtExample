@@ -33,6 +33,9 @@ function App (props) {
       <Menu.Item key="edit">
         <Link to='/edit'> Edit</Link>
       </Menu.Item>
+      <Menu.Item key="virtue">
+        <Link to='/virtue'> 虚拟化长列表</Link>
+      </Menu.Item>
     </Menu>
     {props.children}
   </>)

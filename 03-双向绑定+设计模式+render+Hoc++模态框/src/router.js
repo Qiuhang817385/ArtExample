@@ -10,6 +10,7 @@ const A = lazy(() => import('./component/aaaa/A'))
 const Portals = lazy(() => import('./component/portals/Portals'))
 const Login = lazy(() => import('./component/login/Login'))
 const Edit = lazy(() => import('./component/edit/Edit'))
+const Virtue = lazy(() => import('./component/virtue/Virtue'))
 
 // import SubSup from './component/subsup/SubSup'
 export default class Erouter extends React.Component {
@@ -28,6 +29,7 @@ export default class Erouter extends React.Component {
               <Route path='/portals' component={Portals}></Route>
               <Route path='/login' component={Login}></Route>
               <Route path='/edit' component={Edit}></Route>
+              <Route path='/virtue' component={Virtue}></Route>
             </Switch>
           </Suspense>
         </App>
