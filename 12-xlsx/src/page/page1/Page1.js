@@ -7,7 +7,7 @@ import './Page.scss'
 export default function Page1 () {
 
   const [data, setData] = useState();
-
+  // console.log(data);
   const handleExcel = (file) => {
     // 获取上传的文件对象
     const { files } = file.target;
@@ -38,6 +38,7 @@ export default function Page1 () {
     // 以二进制方式打开文件
     fileReader.readAsBinaryString(files[0]);
   }
+  console.log(data);
 
 
 

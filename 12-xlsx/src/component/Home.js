@@ -16,6 +16,12 @@ export default function Home (props) {
         <Menu.Item key="page2">
           <NavLink to="page2">Page2</NavLink>
         </Menu.Item>
+        <Menu.Item key="page3">
+          <NavLink to="page3">Page3</NavLink>
+        </Menu.Item>
+        <Menu.Item key="page4">
+          <NavLink to="page4">Page4</NavLink>
+        </Menu.Item>
       </Menu>
       {props.children}
     </>

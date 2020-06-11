@@ -26,14 +26,14 @@ export default function Page2 () {
 
   useEffect(() => {
     let data = [];
-    for (let i = 0; i < 30; i++) {
-      data.push({
-        key: i,
-        name: `路人${i}`,
-        age: i,
-        address: `幸福路${i}号`
-      })
-    }
+    // for (let i = 0; i < 30; i++) {
+    //   data.push({
+    //     key: i,
+    //     name: `路人${i}`,
+    //     age: i,
+    //     address: `幸福路${i}号`
+    //   })
+    // }
     setData(data)
   }, [])
 
