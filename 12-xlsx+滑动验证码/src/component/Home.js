@@ -22,6 +22,12 @@ export default function Home (props) {
         <Menu.Item key="page4">
           <NavLink to="page4">Page4</NavLink>
         </Menu.Item>
+        <Menu.Item key="page5">
+          <NavLink to="page5">滑动验证码</NavLink>
+        </Menu.Item>
+        <Menu.Item key="page6">
+          <NavLink to="page6">滑动验证码2</NavLink>
+        </Menu.Item>
       </Menu>
       {props.children}
     </>
