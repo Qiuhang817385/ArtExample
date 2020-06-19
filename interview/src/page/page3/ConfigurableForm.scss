@@ -1,0 +1,13 @@
+.row {
+  font-size: 20px;
+  text-align: center;
+  color: #666;
+
+  .col {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    line-height: 100px;
+    box-shadow: 0 0 5px 0px rgba(101, 12, 12, 0.271);
+  }
+}
