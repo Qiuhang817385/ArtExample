@@ -5,3 +5,8 @@ let arr = [
   [6, 7, 8, 9, [11, 12, [12, 13, [14]]]],
   10
 ]
+
+// let res = Array.from(new Set([...arr.flat(Infinity)]));
+let res = [...new Set(arr.flat(Infinity))];
+
+console.log('res', res);

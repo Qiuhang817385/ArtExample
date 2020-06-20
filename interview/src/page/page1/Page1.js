@@ -33,8 +33,22 @@ export default class Page1 extends Component {
     // await this.delay2(3000);
     console.log('123');
   }
+  componentWillMount () {
+    console.log('componentWillMount');
+  }
+  componentDidMount () {
+    console.log('componentDidMount')
+  }
+  //WARNING! To be deprecated in React v17. Use componentDidUpdate instead.
+  componentWillUpdate (nextProps, nextState) {
+    console.log('componentWillUpdate')
+  }
+  componentDidUpdate (prevProps, prevState) {
+    console.log('componentDidUpdate');
+  }
 
   render () {
+    console.log('render')
     return (
       <div>
         <button onClick={this.handleClick}></button>
