@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .div1 {
+      border: 10px solid transparent;
+      border-left: 10px solid red;
+    }
+
+    .div2 {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px/1px;
+      background-color: black;
+    }
+
+    .div3 {
+      width: 100px;
+      height: 100px;
+      background: red;
+      position: relative;
+      animation: mymove 50s infinite;
+      -webkit-animation: mymove 5s ease 1 forwards;
+      /*Safari and Chrome*/
+    }
+
+    @keyframes mymove {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 500px;
+      }
+    }
+
+    @-webkit-keyframes mymove
+
+    /*Safari and Chrome*/
+      {
+      from {
+        left: 0px;
+      }
+
+      to {
+        left: 500px;
+      }
+    }
+
+
+
+    .div4 {
+      width: 100px;
+      height: 100px;
+      border: 1px solid;
+      margin: 0px auto;
+      margin-top: 200px;
+      /* 在原本元素上再加一个transition */
+      transition: all 1s linear;
+    }
+
+    .div4:hover {
+      transform: scale(2);
+      transition: all 1s linear;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="div1"></div>
+  <div class="div2"></div>
+  <div class="div3"></div>
+  <div class="div4"></div>
+</body>
+
+</html>
