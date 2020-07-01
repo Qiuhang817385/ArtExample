@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- JSON.stringify([1,2,3].sort()) === JSON.stringify([3,2,1].sort()); //true -->
+  <script>
+    function getUnique(array) {
+      let obj = {}
+      return array.filter((item, index) => {
+        // 防止key重复
+        let newItem = item + JSON.stringify(item)
+        return obj.hasOwnProperty(newItem) ? false : obj[newItem] = true
+      })
+    }
+
+    function diff(arr1, arr2) {
+      // return arr1.filter(v => !arr2.includes(v));
+      let withA = arr1.filter(v => !arr2.includes(v))
+      let withB = arr2.filter(v => !arr1.includes(v))
+      console.log('withA,withB', withA, withB);
+      let secLayer = withA.concat(withB).filter(v => !Array.isArray(v));
+      console.log('secLayer', secLayer);
+      let secLayerToRepeat = withA.concat(withB).filter(v => Array.isArray(v));
+      let a = [...new Set(secLayerToRepeat)];
+      let b = getUnique(a)
+      console.log('b', b);
+      return withA.concat(withB);
+    }
+    // console.log(diff([1, 2], [2, 1]));
+    // console.log(diff([1, 2, 1], [2, 1, 1, 2]))
+    // console.log(diff([1, 2, 3], [4, 3, 1]))
+    console.log(diff(
+      [1, [2, 3], 4],
+      [
+        [1, 2],
+        [2, 3], 3, 4
+      ]
+    ))
+  </script>
+</body>
+
+</html>
