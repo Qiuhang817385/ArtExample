@@ -2,7 +2,6 @@ function quickSort (Arr, start, end) {
   let mid = Arr[start];
   let low = start;
   let high = end;
-
   if (low >= high) return;
   while (low < high) {
     while (low < high && Arr[high] >= mid) {

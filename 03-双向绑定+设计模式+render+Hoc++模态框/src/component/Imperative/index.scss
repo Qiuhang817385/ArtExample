@@ -1,0 +1,17 @@
+.input {
+  // outline: red dotted 2px;
+
+  padding: 0;
+  border: 1px solid rgb(0, 170, 255);
+  border-radius: 12px;
+  padding-left: 12px;
+  line-height: 1.5;
+  transition: all 0.5s;
+
+  &:focus {
+    outline: 0;
+    background: transparent;
+    border-color: rgb(0, 170, 255);
+    box-shadow: 0 0 10px rgb(0, 170, 255);
+  }
+}

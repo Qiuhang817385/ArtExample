@@ -12,6 +12,7 @@ const Login = lazy(() => import('./component/login/Login'))
 const Edit = lazy(() => import('./component/edit/Edit'))
 const Virtue = lazy(() => import('./component/virtue/Virtue'))
 const Animations = lazy(() => import('./component/animations/Animations'))
+const Imperative = lazy(() => import('./component/Imperative/Imperative'))
 
 // import SubSup from './component/subsup/SubSup'
 export default class Erouter extends React.Component {
@@ -32,6 +33,7 @@ export default class Erouter extends React.Component {
               <Route path='/edit' component={Edit}></Route>
               <Route path='/virtue' component={Virtue}></Route>
               <Route path='/animations' component={Animations}></Route>
+              <Route path='/Imperative' component={Imperative}></Route>
 
             </Switch>
           </Suspense>
