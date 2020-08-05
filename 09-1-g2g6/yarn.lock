@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@ant-design/charts@^0.9.9":
+  version "0.9.9"
+  resolved "https://registry.yarnpkg.com/@ant-design/charts/-/charts-0.9.9.tgz#0112d62754fb1f155087dec8bb439004d00a75ad"
+  integrity sha512-bc6ouVPRoabkjJoJalTct2NpJbY9rU+0S6q7eL2zHknm7wYQg98gX7uXqUNge3y0pRAi9/fPzp074Hns+Q7xKw==
+  dependencies:
+    "@antv/g2plot" "~1.1.12"
+    "@antv/g6" "^3.5.10"
+
 "@ant-design/colors@^3.1.0":
   version "3.2.2"
   resolved "https://registry.yarnpkg.com/@ant-design/colors/-/colors-3.2.2.tgz#5ad43d619e911f3488ebac303d606e66a8423903"
@@ -190,7 +198,29 @@
     tslib "^1.11.1"
     warning "^4.0.3"
 
-"@antv/g6@^3.5.0", "@antv/g6@^3.6.0":
+"@antv/g2plot@~1.1.12":
+  version "1.1.20"
+  resolved "https://registry.yarnpkg.com/@antv/g2plot/-/g2plot-1.1.20.tgz#aa65e53c8fbfd3c650344b74789d849b64d06e23"
+  integrity sha512-5XZ6nGGN+2hi1yaP3eKGuvpji/wp96Byjj9IK3VAMgIHyF7LyJ2r9KZbg8BSpB0PNgsPOuoQqnOy0r0DEmewJg==
+  dependencies:
+    "@antv/component" "~0.6.1"
+    "@antv/coord" "~0.3.0"
+    "@antv/dom-util" "~2.0.2"
+    "@antv/event-emitter" "~0.1.2"
+    "@antv/g-base" "~0.4.0"
+    "@antv/g-canvas" "~0.4.0"
+    "@antv/g-gesture" "~1.0.0"
+    "@antv/g-svg" "~0.4.0"
+    "@antv/g2" "~4.0.9"
+    "@antv/matrix-util" "~3.1.0-beta.1"
+    "@antv/scale" "~0.3.1"
+    "@antv/util" "~2.0.7"
+    d3-regression "~1.3.4"
+    resize-observer-polyfill "^1.5.1"
+    tslib "^1.11.1"
+    warning "^4.0.3"
+
+"@antv/g6@^3.5.0", "@antv/g6@^3.5.10", "@antv/g6@^3.6.0":
   version "3.6.0"
   resolved "https://registry.yarnpkg.com/@antv/g6/-/g6-3.6.0.tgz#2c6188b97459e341e83aba669e01e3a426200371"
   integrity sha512-CcVZ8hb1DEvO5sFrKjkN1kr5GYFaHsTYt+EiQpmIuVz2cvgbqm7mRCeMaDEr97ochdLk0XNyk8D11on/GgG/Qw==
